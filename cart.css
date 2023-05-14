@@ -14,8 +14,24 @@
 
 html {
   font-family: var(--font);
-  font-size: 12px;
 }
+
+/*scroll bar start*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gold);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--p1);
+  border-radius: 10px;
+}
+
+/*scroll bar end*/
 /*Hearder and Navigation bar */
 
 #nav-bar {
@@ -53,7 +69,7 @@ h1 a, .cart {
     color: var(--dark);
     margin-right: 25px;
     transition: 0.3s ease;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 h1 a:hover,
@@ -107,10 +123,15 @@ h1 a:hover,
   border-radius: 20px;
   margin: auto;
   display: flex;
+  font-size: 1rem;
   overflow: hidden;
   color: var(--dark);
   align-items: center;
   justify-content: center;
+}
+
+.font-size {
+  font-size: 1rem;
 }
 
 #cart-list {
@@ -140,11 +161,11 @@ h1 a:hover,
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
 }
 
 .img-con {
   height: 100%;
+  overflow: hidden;
   aspect-ratio: 1;
   background-color: white;
   border-radius: 20px;
@@ -154,12 +175,12 @@ h1 a:hover,
 }
 
 .img-con img {
-  height: 95%;
+  height: 100%;
   aspect-ratio: 1;
 }
 
 .text-con {
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: 70%;
   margin: auto;
   height: 100%;
@@ -172,7 +193,7 @@ h1 a:hover,
 .text-con h2 {
   height: 50%;
   margin-top: 10px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-left: 10px;
 }
 
@@ -182,7 +203,7 @@ h1 a:hover,
 
 .fla-size-con h2 {
   margin: auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .qty_price_con {
@@ -226,7 +247,7 @@ h1 a:hover,
   margin: 3%;
   padding: 3%;
   border-radius: 20px;
-  font-size: 3rem;
+  font-size: 1.6rem;
   background-color: var(--p2);
   color: rgba(82, 82, 82, 0.678);
   font-weight: 600;
@@ -242,7 +263,7 @@ h1 a:hover,
 
 .content h2 {
   margin-top: 3%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--dark);
 }
@@ -256,12 +277,12 @@ h1 a:hover,
 }
 
 .total h2 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 
 .check-out,
 #check-out {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   width: 100%;
   border-radius: 10px;
   border: none;
@@ -300,7 +321,7 @@ h1 a:hover,
   padding: 0 3%;
   outline: none;
   background-color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .coupon {
@@ -338,12 +359,12 @@ h1 a:hover,
   }
   
   #footer h4 {
-    font-size: 30px;
+    font-size: 1.6rem;
     padding-bottom: 20px;
   }
   
   #footer p, a {
-    font-size: 15px;
+    font-size: 1rem;
     text-decoration: none;
     margin-bottom: 10px;
   }

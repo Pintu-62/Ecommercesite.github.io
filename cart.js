@@ -59,14 +59,17 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${sheet_
         qty_price_cElement.classList.add('qty_price_con');
         
         const priceElement = document.createElement('h1');
+        priceElement.classList.add('font-size');
         priceElement.textContent = price + '/-';
         qty_price_cElement.appendChild(priceElement);
 
         const QtyElement = document.createElement('h1');
+        QtyElement.classList.add('font-size');
         QtyElement.textContent = Quantity;
         qty_price_cElement.appendChild(QtyElement);
 
         const totalElement = document.createElement('h1');
+        totalElement.classList.add('font-size');
         totalElement.textContent = price*Quantity + '/-'
         qty_price_cElement.appendChild(totalElement);
 
