@@ -16,6 +16,12 @@ html {
     font-family: var(--font);
 }
 
+#all-content {
+    min-width: 1356px;
+    max-width: 1356px;
+    margin: auto;
+  }
+
 /*scroll bar start*/
 
 ::-webkit-scrollbar {

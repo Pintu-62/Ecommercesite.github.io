@@ -16,6 +16,14 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${sheet_
         const productElement = document.createElement('div');
         productElement.classList.add('product');
 
+        const discardElement = document.createElement('div');
+        discardElement.classList.add('discard');
+        const discardtElement = document.createElement('h2');
+        discardtElement.classList.add('dis-card-text');
+        discardtElement.textContent = dis + '%' + ' OFF';
+        discardElement.appendChild(discardtElement);
+        productElement.appendChild(discardElement);
+
         const imgeElement = document.createElement('div');
         imgeElement.classList.add('img-con');
         const imageElement = document.createElement('img');
@@ -89,6 +97,14 @@ const R_sign = "Rs. ";
   
         const productElement = document.createElement('div');
         productElement.classList.add('product');
+
+        const discardElement = document.createElement('div');
+        discardElement.classList.add('discard');
+        const discardtElement = document.createElement('h2');
+        discardtElement.classList.add('dis-card-text');
+        discardtElement.textContent = dis + '%' + ' OFF';
+        discardElement.appendChild(discardtElement);
+        productElement.appendChild(discardElement);
 
         const imgeElement = document.createElement('div');
         imgeElement.classList.add('img-con');
